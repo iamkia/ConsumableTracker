@@ -1,0 +1,13 @@
+curl -i -H "Content-Type: application/json" -X POST -d '{
+    "@type": "Food",
+    "id": 1,
+    "choice": 2,
+    "name": "asdf",
+    "note": "asdf",
+    "price": 234.0,
+    "volume": 234,
+    "expiryDate": "2021-11-11T03:00"
+    }' localhost:8080/addItem
+
+curl -i -H "Content-Type: application/json" -X POST -d '{
+    }' localhost:8080/removeItem/1
